@@ -1,0 +1,77 @@
+body,html,ul,li,div,p,dl,li{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+button{
+    outline: none;
+    border:none;
+}
+input{
+    outline: none;
+}
+img{
+    width:100%;
+}
+
+.el-submenu .el-menu{    
+    width: 88.7%;
+    margin-left: 11.3%;
+}
+//全局分页样式
+.el-pagination{
+    margin-top: 50px;
+    text-align: center;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+    background:rgba(187, 17, 26);
+}
+.el-pagination.is-background .el-pager li:not(.disabled):hover,
+.el-pagination.is-background .btn-next, 
+.el-pagination.is-background .btn-prev{
+    color:rgba(187, 17, 26);
+}
+//复选框
+.el-checkbox__input.is-checked .el-checkbox__inner, 
+.el-checkbox__input.is-indeterminate .el-checkbox__inner{
+    background-color: rgba(187, 17, 26);
+    border-color: rgba(187, 17, 26);
+    color:rgba(187, 17, 26);
+}
+.el-checkbox__input.is-checked+.el-checkbox__label{
+    color:#333;
+}
+//tab表格
+.el-table td{
+    padding:0;
+}
+.el-table .cell,
+.el-table th div,
+.el-table--border td:first-child .cell,
+.el-table--border th:first-child .cell{
+    padding-left: 0;
+}
+.el-table__row.changeCss{
+    td:nth-of-type(1){
+        .cell{
+            color:#409EFF;
+        }
+    }
+}
+.service{
+    .el-table__row.changeCss{
+        td:nth-of-type(3){
+            .cell{
+                color:rgb(255, 216, 152);
+            }
+        }
+    }
+}
+.bene .el-table .el-button--small, .el-button--small.is-round{
+    padding: 0;
+}
