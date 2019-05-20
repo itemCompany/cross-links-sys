@@ -125,15 +125,25 @@ export default {
                       {
                         id:0,
                         path:'/navData',
-                        name:'大导航维护'
+                        name:'大导航列表'
                       },
                       {
                         id:1,
-                        path:'/searchType',
-                        name:'搜索类型维护'
+                        path:'/addNavData',
+                        name:'新增大导航'
                       },
                       {
                         id:2,
+                        path:'/searchType',
+                        name:'搜索类型列表'
+                      },
+                      {
+                        id:3,
+                        path:'/addSearchType',
+                        name:'新增搜索类型'
+                      },
+                      {
+                        id:4,
                         path:'/mapData',
                         name:'搜索类型维护'
                       }

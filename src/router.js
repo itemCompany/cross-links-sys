@@ -72,9 +72,19 @@ export default new Router({
                     component: () => import('@/pages/dataDictionary/mapData.vue')
                 },
                 {
+                    path: '/addSearchType',
+                    name: 'addSearchType',
+                    component: () => import('@/pages/dataDictionary/addSearchType.vue')
+                },
+                {
                     path: '/searchType',
                     name: 'searchType',
                     component: () => import('@/pages/dataDictionary/searchType.vue')
+                },
+                {
+                    path: '/addNavData',
+                    name: 'addNavData',
+                    component: () => import('@/pages/dataDictionary/addNavData.vue')
                 },
                 {
                     path: '/navData',

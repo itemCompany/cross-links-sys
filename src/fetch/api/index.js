@@ -1,19 +1,19 @@
 import bene from './bene'
-import home from './home'
+import dataDictionary from './dataDictionary'
 import information from './information'
 import navigation from './navigation'
 import service from './service'
 import user from './user'
-import login from './login'
+import notice from './notice'
 
 const api = {
     bene,
-    home,
+    dataDictionary,
     information,
     navigation,
     service,
     user,
-    login
+    notice
 }
 
 export default api
