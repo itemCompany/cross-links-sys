@@ -1,6 +1,6 @@
 <template>
-    <div class="dataDictionary">
-        数据字典
+    <div class="navigationList">
+        导航列表
     </div>
 </template>
 
@@ -14,6 +14,6 @@
 </script>
 
 <style lang='less' scoped>
-.dataDictionary{
+.navigationList{
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-    <div class="information">
-        资讯
+    <div class="searchType">
+       搜索类型
     </div>
 </template>
 
@@ -14,6 +14,6 @@
 </script>
 
 <style lang='less' scoped>
-.information{
+.searchType{
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-    <div class="bene">
-        惠政
+    <div class="dataDictionary-nav">
+        大导航
     </div>
 </template>
 
@@ -14,6 +14,6 @@
 </script>
 
 <style lang='less' scoped>
-.bene{
+.dataDictionary-nav{
 }
 </style>

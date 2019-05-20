@@ -1,6 +1,6 @@
 <template>
-    <div class="navigation">
-        导航
+    <div class="publishNavigation">
+        发布导航
     </div>
 </template>
 
@@ -14,6 +14,6 @@
 </script>
 
 <style lang='less' scoped>
-.navigation{
+.publishNavigation{
 }
 </style>

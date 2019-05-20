@@ -1,6 +1,6 @@
 <template>
-    <div class="notice">
-        筒子公告
+    <div class="serviceList">
+        服务列表
     </div>
 </template>
 
@@ -14,6 +14,6 @@
 </script>
 
 <style lang='less' scoped>
-.notice{
+.serviceList{
 }
 </style>

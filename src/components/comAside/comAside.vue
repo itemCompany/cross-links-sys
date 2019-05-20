@@ -8,10 +8,13 @@
             <el-submenu :index="it.id.toString()" v-for="it in navList" :key="it.id">
                 <template slot="title">
                     <i :class="it.icon"></i>
-                     <router-link slot="title" exact tag="span" style="margin-left:14px" :to="it.path">{{it.name}}</router-link>
+                    <span slot="title" style="margin-left:14px">{{it.name}}</span>
+                     <!-- <router-link slot="title" exact tag="span" style="margin-left:14px" :to="it.path">{{it.name}}</router-link> -->
                 </template>
                 <el-menu-item-group>
-                    <el-menu-item :index="it.id+'-'+is.id"  v-for="is in it.children" :key="is.id">{{is.name}}</el-menu-item>
+                    <el-menu-item :index="it.id+'-'+is.id"  v-for="is in it.children" :key="is.id">
+                        <router-link slot="title" exact tag="span" :to="is.path">{{is.name}}</router-link>
+                    </el-menu-item>
                 </el-menu-item-group>
             </el-submenu>
         </el-menu>
@@ -31,18 +34,13 @@ export default {
                   children:[
                       {
                         id:0,
-                        path:'/publishInformation',
-                        name:'发布资讯'
+                        path:'/informationList',
+                        name:'通资讯列表'
                       },
                       {
                         id:1,
-                        path:'/modifyInformation',
-                        name:'修改资讯'
-                      },
-                      {
-                        id:2,
-                        path:'/deleteInformation',
-                        name:'删除资讯'
+                        path:'/publishInformation',
+                        name:'发布通资讯'
                       }
                   ]
               },
@@ -54,18 +52,13 @@ export default {
                   children:[
                       {
                         id:0,
-                        path:'/publishInformation',
-                        name:'发布惠政'
+                        path:'/beneList',
+                        name:'通惠政列表'
                       },
                       {
                         id:1,
-                        path:'/modifyInformation',
-                        name:'修改惠政'
-                      },
-                      {
-                        id:2,
-                        path:'/deleteInformation',
-                        name:'删除惠政'
+                        path:'/publishBene',
+                        name:'发布通惠政'
                       }
                   ]
               },
@@ -77,18 +70,13 @@ export default {
                   children:[
                       {
                         id:0,
-                        path:'/publishInformation',
-                        name:'发布服务'
+                        path:'/serviceList',
+                        name:'通服务列表'
                       },
                       {
                         id:1,
-                        path:'/modifyInformation',
-                        name:'修改服务'
-                      },
-                      {
-                        id:2,
-                        path:'/deleteInformation',
-                        name:'删除服务'
+                        path:'/publishService',
+                        name:'发布通服务'
                       }
                   ]
               },
@@ -100,18 +88,13 @@ export default {
                   children:[
                       {
                         id:0,
-                        path:'/publishInformation',
-                        name:'发布导航'
+                        path:'/navigationList',
+                        name:'导航通列表'
                       },
                       {
                         id:1,
-                        path:'/modifyInformation',
-                        name:'修改导航'
-                      },
-                      {
-                        id:2,
-                        path:'/deleteInformation',
-                        name:'删除导航'
+                        path:'/publishNavigation',
+                        name:'发布通导航'
                       }
                   ]
               },
@@ -123,18 +106,13 @@ export default {
                   children:[
                       {
                         id:0,
-                        path:'/publishInformation',
-                        name:'发布通知公告'
+                        path:'/noticeList',
+                        name:'通知公告列表'
                       },
                       {
                         id:1,
-                        path:'/modifyInformation',
-                        name:'修改通知公告'
-                      },
-                      {
-                        id:2,
-                        path:'/deleteInformation',
-                        name:'删除通知公告'
+                        path:'/publishNotice',
+                        name:'发布通知公告'
                       }
                   ]
               },
@@ -142,7 +120,24 @@ export default {
                   id:5,
                   path:'/dataDictionary',
                   name:'数据字典管理',
-                  icon:'el-icon-tickets'
+                  icon:'el-icon-tickets',
+                  children:[
+                      {
+                        id:0,
+                        path:'/navData',
+                        name:'大导航维护'
+                      },
+                      {
+                        id:1,
+                        path:'/searchType',
+                        name:'搜索类型维护'
+                      },
+                      {
+                        id:2,
+                        path:'/mapData',
+                        name:'搜索类型维护'
+                      }
+                  ]
               },
               {
                   id:6,
