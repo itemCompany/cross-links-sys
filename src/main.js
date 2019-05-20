@@ -11,6 +11,8 @@ Vue.use(ElementUI)
 import { post, get} from "./fetch/http"
 import api from './fetch/api/index'
 
+Vue.prototype.$post = post
+Vue.prototype.$api = api
 Vue.config.productionTip = false
 
 new Vue({
