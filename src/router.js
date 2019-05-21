@@ -72,24 +72,9 @@ export default new Router({
                     component: () => import('@/pages/dataDictionary/mapData.vue')
                 },
                 {
-                    path: '/addFirstSearchType',
-                    name: 'addFirstSearchType',
-                    component: () => import('@/pages/dataDictionary/addFirstSearchType.vue')
-                },
-                {
-                    path: '/addSecondSearchType',
-                    name: 'addSecondSearchType',
-                    component: () => import('@/pages/dataDictionary/addSecondSearchType.vue')
-                },
-                {
-                    path: '/searchTypeList1',
-                    name: 'searchTypeList1',
-                    component: () => import('@/pages/dataDictionary/searchTypeList1.vue')
-                },
-                {
-                    path: '/searchTypeList2',
-                    name: 'searchTypeList2',
-                    component: () => import('@/pages/dataDictionary/searchTypeList2.vue')
+                    path: '/searchTypeList',
+                    name: 'searchTypeList',
+                    component: () => import('@/pages/dataDictionary/searchTypeList.vue')
                 },
                 {
                     path: '/addNavData',

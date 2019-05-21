@@ -134,26 +134,11 @@ export default {
                       },
                       {
                         id:2,
-                        path:'/searchTypeList1',
-                        name:'一级搜索类型列表'
-                      },
-                      {
-                        id:3,
-                        path:'/addFirstSearchType',
-                        name:'新增一级搜索类型'
-                      },
-                      {
-                        id:4,
-                        path:'/searchTypeList2',
-                        name:'二级搜索类型列表'
+                        path:'/searchTypeList',
+                        name:'搜索类型列表'
                       },
                       {
                         id:5,
-                        path:'/addSecondSearchType',
-                        name:'新增二级搜索类型'
-                      },
-                      {
-                        id:6,
                         path:'/mapData',
                         name:'地图定位数据维护'
                       }
