@@ -145,10 +145,18 @@ export default {
                   ]
               },
               {
-                  id:6,
+                   id:6,
                   path:'/user',
                   name:'用户信息管理',
-                  icon:'el-icon-news'
+                  icon:'el-icon-news',
+                  children:[
+                        {
+                        id:1,
+                        path:'/user',
+                        name:'用户管理'
+                        }
+
+                  ]
               }
           ]
       };
